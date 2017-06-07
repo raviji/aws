@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+   poolData={
+     UserPoolId:'us-west-2_oM7LxQxPS',
+     ClientId:'4sudi90ajjukd0fsmitv974bng'
+   };
+   //userPool = new AWSCognito.CognitoIdentityServiceProvider.CognitoUserPool(this.poolData);
+  connectAWS(){
+    console.log(this.poolData);
+  }
+  
 }
